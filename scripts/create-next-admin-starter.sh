@@ -80,7 +80,8 @@ npx --yes shadcn@"$SHADCN_VERSION" init -d --yes
 echo ""
 
 echo "10. shadcn/ui 기본 컴포넌트 추가"
-npx --yes shadcn@"$SHADCN_VERSION" add button input label textarea select checkbox dialog dropdown-menu table tabs card badge separator form sheet breadcrumb avatar skeleton --yes
+# base-nova: form 대신 field (v4 폼 래퍼)
+npx --yes shadcn@"$SHADCN_VERSION" add button input label textarea select checkbox dialog dropdown-menu table tabs card badge separator field sheet breadcrumb avatar skeleton --yes
 echo ""
 
 echo "11. 설치 버전 확인"
