@@ -68,11 +68,12 @@ cd <새-프로젝트명>
 ### 3. 셋업
 
 ```bash
-nvm use              # .nvmrc 를 읽어 Node 버전을 맞춤
-npm ci               # package-lock.json 대로 "정확히" 설치 (npm install 아님)
-cp .env.example .env # 환경변수 틀 복사 → .env 에 이 프로젝트의 실제 값 입력
-npx prisma generate  # Prisma 클라이언트 생성
-npm run dev          # 개발 서버 실행 (http://localhost:3000)
+nvm use               # .nvmrc 를 읽어 Node 버전을 맞춤 for mac or linux 
+nvm use $(cat .nvmrc) # .nvmrc 를 읽어 Node 버전을 맞춤 for window git bash
+npm ci                # package-lock.json 대로 "정확히" 설치 (npm install 아님)
+cp .env.example .env  # 환경변수 틀 복사 → .env 에 이 프로젝트의 실제 값 입력
+npx prisma generate   # Prisma 클라이언트 생성
+npm run dev           # 개발 서버 실행 (http://localhost:3000)
 ```
 
 > **`npm install` 이 아니라 `npm ci` 를 쓰는 이유**
